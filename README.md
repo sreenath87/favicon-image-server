@@ -1,8 +1,15 @@
 # image-server
-A repo to hold code for the medium article how to do an easy image server fastapi
+A repo to hold code for running a simple web server to serve favicons or other images
+
+The original repo "https://github.com/wjutrkker/image-server" has been modified with docker compose for ease of build and management
+
+Simply clone the repo and execute 
+
+
 ```
-DATA_DIR="$PWD/images"  
-docker build -t image-server:latest .  
-docker run --restart always --network host -d -v $DATA_DIR:/images image-server:latest  
+docker compose up -d --build
+
 ```
-http://localhost:8002/images/Gemini_Generated_Image.jpeg  
+The website can be reached at :
+
+http://<localhost>or<ipaddress>:8111/images/<imagename.extension>
