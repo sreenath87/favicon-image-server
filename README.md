@@ -12,4 +12,4 @@ docker compose up -d --build
 ```
 The website can be reached at :
 
-http://<localhost>or<ipaddress>:8111/images/<imagename.extension>
+http://localhost or ipaddress:8111/images/<imagename.extension>
