@@ -1,0 +1,12 @@
+services:
+  image-server:
+    build:
+      context: .        # same as docker build -t image-server:latest .
+      dockerfile: Dockerfile
+    image: image-server:latest
+    container_name: image-server
+    network_mode: host  # same as --network host
+    restart: always     # same as --restart always
+    volumes:
+      - ./images:/images  # same as -v $PWD/images:/images
+
